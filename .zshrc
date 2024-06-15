@@ -122,3 +122,20 @@ alias hello="./greet.sh";
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 eval "$(zoxide init zsh)"
+alias k='kubectl'
+alias kgp='k get pods'
+alias kgd='k get deployments'
+alias kgs='k get services'
+alias kgn='k get nodes'
+alias kgr='k get replicasets'
+alias kd= 'k delete'
+alias kdp='k delete pod'
+alias kds='k delete service'
+alias kdd='k delete deployment'
+alias kdn='k delete namespace'
+alias kcf='k create -f'
+alias kaf='k apply -f'
+alias kga='k get all'
+alias cls='clear'
+alias dda='docker rm -vf $(docker ps -aq)'
+
